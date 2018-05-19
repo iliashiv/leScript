@@ -1,0 +1,136 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Nicolai Sandmann, Ivan Iliash}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\title{Mathematik Kompakt}
+\begin{document}
+\maketitle
+\section{Folgen}
+\subsection{Kompaktes Basiswissen}
+Eine reelle Folge ist eine Funktion von $\mathbb{N} \rightarrow \mathbb{R}$
+\begin{center}
+~\\[10pt] $f : \mathbb{N}  \rightarrow \mathbb{R},\quad n \rightarrow  {f_n}$  
+\end{center}
+\subsubsection{Essentielle Definitionen zum Arbeiten mit Folgen}
+\begin{defn}
+\textbf{Grenzwert} einer Folge (auch \textbf{Limes})
+\newline Ein Element $ a \in\mathbb{R} $ heißt \textbf{Grenzwert} der Folge, falls gilt: Für jedes $\epsilon > 0 $ gibt es ein $ N \in\mathbb{N} $ mit $|{f_n}-a| < \epsilon $ für alle $n \geq N $
+\begin{center}~\\[10pt]$\forall \epsilon>0\quad \exists N\in\mathbb{N}\quad \forall n \geq N\in\mathbb{N} : |{f_n} - a| < \epsilon$
+\end{center}
+\end{defn}
+\begin{defn}
+\textbf{Häufungspunkt}
+\newline Ein Element $ a \in\mathbb{R} $ heißt \textbf{Häufungspunkt} der Folge, falls gilt: Für jedes $\epsilon > 0 $ und jedes $ N \in\mathbb{N} $ gibt es ein $n \in\mathbb{N} $ mit $|{f_n}-a| < \epsilon $
+\begin{center}~\\[10pt]$\forall \epsilon>0\quad \forall N\in\mathbb{N}\quad \exists n \geq N\in\mathbb{N} : |{f_n} - a| < \epsilon$
+\end{center}
+\end{defn}.
+\begin{defn}
+Ist die Folge nach oben beschränkt so existiert ein \textbf{Supremum}
+\newline Für jedes $x \in f : \mathbb{N}  \rightarrow \mathbb{R}$ ist $ x \leq S \rightarrow$ (S = Supremum)
+\newline Für jedes $x < S$ gibt es eine Zahl $x < y \in f : \mathbb{N}  \rightarrow \mathbb{R}$
+\newline gilt zusätzlich:
+$\exists n\in\mathbb{N} : {f_n} = S$ so ist S \textbf{Maximum} von ${f_n}$. Analoges gilt für \textbf{Infimum}/\textbf{Minimum}.
+\end{defn}
+\subsubsection{Monotonie Beschränktheit und Konvergenz}
+Dabei nennt man $ N $ den Index und $ {f_n} $ die Glieder der Folge.
+~\\[10pt]Eine Folge $ {f_n} $ heißt \textbf{monoton wachsend} wenn
+\begin{center}~\\[10pt] $ {f_n} \leq f{n+1} \quad\forall n\in\mathbb{N}$
+~\\[10pt]
+~\newline bzw. bei einer Menge B $\forall u, v \in\mathbb{N}$ mit $u < v$ gilt $ B(u)<B(v)$
+\end{center}
+~\\[10pt] ~\textbf{monoton fallend} wenn
+\begin{center}~\\[10pt] $ {f_n} \geq f{n+1} \quad\forall n\in\mathbb{N}$
+~\\[10pt]
+~\newline bzw. bei einer menge B $\forall u, v \in\mathbb{N}$ mit $u < v $ gilt $B(u)>B(v)$
+\end{center}
+~\\[10pt]~\textbf{nach oben beschränkt} wenn
+\begin{center}
+~\\[10pt] $ {f_n} \leq S \quad\forall n\in\mathbb{N}\quad S\in\mathbb{R}$
+\end{center}
+~\\[10pt]~\textbf{nach unten beschränkt} wenn
+\begin{center}
+~\\[10pt] $ {f_n} \geq s \quad\forall n\in\mathbb{N}\quad s\in\mathbb{R}$
+\end{center}
+~\\[10pt] und \textbf{beschränkt} falls beides gilt.  Außerdem nennt man eine Folge $ f{n} $ \textbf{konvergent} gegen eine reelle Zahl a wenn gilt:
+\begin{center}
+~\\[10pt] $a = \lim\limits_{n \rightarrow \infty}{f_n}$
+\end{center}
+~\\[10pt] a wird hier auch Grenzwert von $ {f_n} $ genannt. Ist $ {f_n} $ monoton steigend nennt man a zusätzlich Supremum von $ {f_n} $. Ist $ {f_n} $ monoton fallend nennt man a Infimum. Ist die Folge eine Konstante so ist die Konstante gleichzeitig der Grenzwert. \newline Eine komplexe Folge $ {f_n} = {x_n}+i{y_n} $ nennt man konvergent, wenn Real- und Imaginärteil konvergiert. Der Grenzwert ist dann:
+\begin{center}
+$ a = x + iy $
+\end{center}
+Jede nicht konvergente Folge ist divergent. Jede unbeschränkte Folge ist nicht konvergent und damit divergent.
+\\~\\ Wenn eine reellwertige Folge monoton wachsend (fallend) und nach oben (nach unten) beschränkt ist, ist sie konvergent.
+Eine Folge $ {f_n} $ heißt \textbf{uneigentlich konvergent bzw bestimmt divergent gegen $\infty$} wenn :
+
+$$
+\forall_{K \in \mathbb{R}}
+\hspace{0.2cm}
+\exists_{N \in \mathbb{N}}
+\hspace{0.2cm}
+\forall_{n \geq N} : f_n > K
+$$
+
+$$\lim\limits_{n \rightarrow \infty}{f_n} = \infty$$
+
+Eine Folge $ {f_n} $ heißt \textbf{uneigentlich konvergent bzw bestimmt divergent gegen $-\infty$} wenn :
+
+$$
+\forall_{K \in \mathbb{R}}
+\hspace{0.2cm}
+\exists_{N \in \mathbb{N}}
+\hspace{0.2cm}
+\forall_{n \geq N} : f_n < K
+$$
+
+d.h.:$$\lim\limits_{n \rightarrow \infty}{f_n} = -\infty$$
+\subsubsection{Rechenregeln für konvergente Folgen}
+Wird eine konvergente Folge mit $\lambda \in\mathbb{R}$ skaliert so wird der Grenzwert der Folge ebenfalls mit $\lambda$ skaliert. Da das analog für Quotienten, Produkte, Summen und Differenzen von Folgen gilt kann man den Grenzwert einer Folge berechnen indem man sie in konvergente Folgen und Konstanten zerlegt deren Grenzwerte bekannt sind.
+\newline Sind ${f_n}$ und ${g_n}$ konvergente Folgen mit den Grenzwerten f bzw. g, so sind auch die zusammengemischten Folgen $\lambda \cdot {g_n},~\ {g_n}\cdot {f_n}, ...$ konvergent mit folgenden Grenzwerten:
+\begin{center}
+$\lim\limits_{n \rightarrow \infty}(\lambda \cdot {f_n}) = \lambda \cdot f$
+~\\[15pt]
+$\lim\limits_{n \rightarrow \infty}({g_n} + {f_n}) = $ g $+$ f
+~\\[15pt]
+$\lim\limits_{n \rightarrow \infty}({g_n} - {f_n}) = $ g $-$ f
+~\\[15pt]
+$\lim\limits_{n \rightarrow \infty}({g_n} \cdot {f_n}) = $ g $\cdot$ f
+~\\[15pt]
+$\lim\limits_{n \rightarrow \infty}(\dfrac{{g_n}}{{f_n}}) = \dfrac{g}{f}$ , falls f $\neq 0$
+\end{center}
+\newpage
+\subsubsection{Eigenschaften konvergenter Folgen}
+Der Grenzwert einer Folge ist eindeutig.
+\newline Konvergiert eine Folge, so konvergiert auch jede Teilfolge gegen den Grenzwert.
+\newline Jede konvergente Folge ist beschränkt.
+\subsection{Hilfreiche Lösungsschemas}
+\subsubsection{Konvergenz einer Folge bestimmen}
+Bestimme die Konvergenz der rationalen Folge:
+$${f_n} = \dfrac{{a_k}n^{k} + {a_k-1}n^{k-1}+...+{a_0}}{{b_l}n^{l}+{b_l-1}n^{l-1}+...+{b_0}}$$
+~\\[5pt]
+Hier macht es sinn den Zählergrad und den Nennergrad zu betrachten.
+\newline Fall 1: Zählergrad(k) > Nennergrad(l)
+\newline Dann gilt für die Konvergenz von ${f_n}$:
+\newline $$sign \dfrac{{a_k}}{{b_l}} \cdot \infty$$
+\newline Fall 2: Zählergrad(k) = Nennergrad(n)
+\newline Dann gilt für die Konvergenz (und sogar den Grenzwert) von ${f_n}$:
+\newline $$\dfrac{{a_k}}{{b_l}} $$
+\newline Fall 3: Zählergrad(k) < Nennergrad(n)
+\newline Dann gilt für die Konvergenz von ${f_n}$: $$ 0 $$
+\begin{center}
+\textbf{Bestimme den Grenzwert einer rationalen Folge:}
+\end{center}
+1. Variable oben und unten ausklammern
+\newline 2. Variable kürzen. Nullfolgen streichen $\dfrac{1}{n^{x}}$
+\newline Konstanten die übrig bleiben sind dann der Grenzwert.
+\section{Reihen}
+aka spezielle Folgen. Reihen werden zum Beispiel dazu verwendet um beliebige Funktionen durch einfachere zu approximieren.
+$$ \sum_{n=0}^{\infty}a^{n}= {a_0} + {a_1}... $$ mit ${a_k} \in\mathbb{R}$ oder $\mathbb{C}$
+\section{Repertoire an Reihen und Folgen}
+\end{document}

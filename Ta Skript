@@ -132,5 +132,21 @@ Hier macht es sinn den Zählergrad und den Nennergrad zu betrachten.
 \section{Reihen}
 aka spezielle Folgen. Reihen werden zum Beispiel dazu verwendet um beliebige Funktionen durch einfachere zu approximieren.
 $$ \sum_{n=0}^{\infty}a^{n}= {a_0} + {a_1}... $$ mit ${a_k} \in\mathbb{R}$ oder $\mathbb{C}$
+
 \section{Repertoire an Reihen und Folgen}
+
+\section{Stochastik}
+Binomischer Lehrsatz:
+$$(a+b)^n = \sum_{k=0}^{n}\frac{n!}{k!\cdot(n-k)!}\cdot a^{n-k}\cdot b^k$$
+Ziehen von k-Objekten aus einer Menge mit n-Objekten.
+\\
+1. Aufgabe: Ohne Zurücklegen; Reihenfolge egal:
+$$ {n\choose k} $$
+2. Aufgabe: Ohne Zurücklegen; Reihenfolge wichtig:
+$$ \frac{n!}{\left(n-k\right)!} $$
+3. Aufgabe: Mit Zurücklegen; Reihenfolge egal:
+$$ {n+k-1\choose k} $$
+4. Aufgabe: Mit Zurücklegen; Reihenfolge wichtig:
+$$ n^k $$
+
 \end{document}

@@ -4,7 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\author{Nicolai Sandmann, Ivan Iliash}
+\author{IP Mann, Ivan Iliash}
 \usepackage{amsthm}
 \theoremstyle{definition}
 \newtheorem{defn}{Definition}
@@ -44,16 +44,11 @@ $\exists n\in\mathbb{N} : {f_n} = S$ so ist S \textbf{Maximum} von ${f_n}$. Anal
 \end{defn}
 
 \begin{defn}
-\textbf{Limes superior}
+\textbf{Limes superior/inferior}
 \newline
-
+In der Mathematik bezeichnen \textbf{Limes superior} bzw. \textbf{Limes inferior} einer Folge reeller Zahlen den größten bzw. kleinsten Häufungspunkt der Folge. Limes superior und Limes inferior sind ein partieller Ersatz für den Grenzwert, falls dieser nicht existiert.  Falls dieser existiert entspricht der Limes superior bzw. Limes inferior dem Grenzwert.
 \end{defn}
 
-\begin{defn}
-\textbf{Limes inferior}
-\newline
-
-\end{defn}
 
 \subsubsection{Monotonie Beschränktheit und Konvergenz}
 Dabei nennt man $ N $ den Index und $ {f_n} $ die Glieder der Folge.
@@ -166,7 +161,7 @@ WIP
 WIP
 
 \section{B-adische Darstellung und Anwendung}
-WIP
+WIP (b-adische Folgen; def schließlich periodisch etc)
 
 \section{Stochastik}
 Binomischer Lehrsatz:

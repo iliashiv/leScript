@@ -18,25 +18,43 @@ Eine reelle Folge ist eine Funktion von $\mathbb{N} \rightarrow \mathbb{R}$
 ~\\[10pt] $f : \mathbb{N}  \rightarrow \mathbb{R},\quad n \rightarrow  {f_n}$  
 \end{center}
 \subsubsection{Essentielle Definitionen zum Arbeiten mit Folgen}
+
 \begin{defn}
 \textbf{Grenzwert} einer Folge (auch \textbf{Limes})
 \newline Ein Element $ a \in\mathbb{R} $ heißt \textbf{Grenzwert} der Folge, falls gilt: Für jedes $\epsilon > 0 $ gibt es ein $ N \in\mathbb{N} $ mit $|{f_n}-a| < \epsilon $ für alle $n \geq N $
 \begin{center}~\\[10pt]$\forall \epsilon>0\quad \exists N\in\mathbb{N}\quad \forall n \geq N\in\mathbb{N} : |{f_n} - a| < \epsilon$
 \end{center}
 \end{defn}
+
 \begin{defn}
 \textbf{Häufungspunkt}
 \newline Ein Element $ a \in\mathbb{R} $ heißt \textbf{Häufungspunkt} der Folge, falls gilt: Für jedes $\epsilon > 0 $ und jedes $ N \in\mathbb{N} $ gibt es ein $n \in\mathbb{N} $ mit $|{f_n}-a| < \epsilon $
 \begin{center}~\\[10pt]$\forall \epsilon>0\quad \forall N\in\mathbb{N}\quad \exists n \geq N\in\mathbb{N} : |{f_n} - a| < \epsilon$
 \end{center}
 \end{defn}.
+
 \begin{defn}
+\textbf{Supremum}
+\newline
 Ist die Folge nach oben beschränkt so existiert ein \textbf{Supremum}
 \newline Für jedes $x \in f : \mathbb{N}  \rightarrow \mathbb{R}$ ist $ x \leq S \rightarrow$ (S = Supremum)
 \newline Für jedes $x < S$ gibt es eine Zahl $x < y \in f : \mathbb{N}  \rightarrow \mathbb{R}$
 \newline gilt zusätzlich:
 $\exists n\in\mathbb{N} : {f_n} = S$ so ist S \textbf{Maximum} von ${f_n}$. Analoges gilt für \textbf{Infimum}/\textbf{Minimum}.
 \end{defn}
+
+\begin{defn}
+\textbf{Limes superior}
+\newline
+
+\end{defn}
+
+\begin{defn}
+\textbf{Limes inferior}
+\newline
+
+\end{defn}
+
 \subsubsection{Monotonie Beschränktheit und Konvergenz}
 Dabei nennt man $ N $ den Index und $ {f_n} $ die Glieder der Folge.
 ~\\[10pt]Eine Folge $ {f_n} $ heißt \textbf{monoton wachsend} wenn
@@ -105,10 +123,18 @@ $\lim\limits_{n \rightarrow \infty}({g_n} \cdot {f_n}) = $ g $\cdot$ f
 $\lim\limits_{n \rightarrow \infty}(\dfrac{{g_n}}{{f_n}}) = \dfrac{g}{f}$ , falls f $\neq 0$
 \end{center}
 \newpage
+
 \subsubsection{Eigenschaften konvergenter Folgen}
 Der Grenzwert einer Folge ist eindeutig.
 \newline Konvergiert eine Folge, so konvergiert auch jede Teilfolge gegen den Grenzwert.
 \newline Jede konvergente Folge ist beschränkt.
+
+\subsubsection{Teilfolgen}
+WIP
+
+\subsubsection{Konvergenzkriterien}
+Cauchy-Konvergenzkriterium für Reihen, Leibniz Kriterium, Minorante Majorante etc etc. WIP
+
 \subsection{Hilfreiche Lösungsschemas}
 \subsubsection{Konvergenz einer Folge bestimmen}
 Bestimme die Konvergenz der rationalen Folge:
@@ -133,7 +159,14 @@ Hier macht es sinn den Zählergrad und den Nennergrad zu betrachten.
 aka spezielle Folgen. Reihen werden zum Beispiel dazu verwendet um beliebige Funktionen durch einfachere zu approximieren.
 $$ \sum_{n=0}^{\infty}a^{n}= {a_0} + {a_1}... $$ mit ${a_k} \in\mathbb{R}$ oder $\mathbb{C}$
 
+\subsection{Absolute Konvergenz bei Reihen}
+WIP
+
 \section{Repertoire an Reihen und Folgen}
+WIP
+
+\section{B-adische Darstellung und Anwendung}
+WIP
 
 \section{Stochastik}
 Binomischer Lehrsatz:
@@ -149,4 +182,19 @@ $$ {n+k-1\choose k} $$
 4. Aufgabe: Mit Zurücklegen; Reihenfolge wichtig:
 $$ n^k $$
 
+\section{Tutorial HA 1}
+
+\section{Tutorial HA 2}
+
+\section{Tutorial HA 3}
+
+\section{Tutorial HA 4}
+
+\section{Tutorial HA 5}
+
+\section{Tutorial HA 6}
+
+\section{Tutorial HA 7}
+
+\section{Tutorial HA 8}
 \end{document}

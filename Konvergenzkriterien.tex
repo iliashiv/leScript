@@ -1,0 +1,91 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{mathtools}
+ 
+\title{Konvergenzkriterien}
+\newtheorem{theorem}{Satz}[section]
+
+\begin{document}
+
+\section{Grundlagen über Reihen}
+\begin{theorem}[Monotones Konvergenzkriterium für Reihen]	
+
+Es sei $f \in \mathbb{R}^{\mathbb{N}}$ mit $f_{n} \geq 0$ für alle n. Dann konvergiert $S^{f}$ genau dann wenn $S^{f}$ nach oben beschränkt ist.
+
+\end{theorem}
+
+\begin{theorem}[Cauchy-Konvergenzkriterium für Reihen]
+
+Für eine Folge $f \in \mathbb{R}^{\mathbb{N}}$ (bzw. $f \in \mathbb{C}^{\mathbb{N}}$) sind äquivalent:
+\newline
+(a) Die zu  $S^{f}$ gehörende Reihe konvergiert.
+\newline
+(b) Für jedes $\epsilon > 0$ gibt es ein $N \in \mathbb{N}$, so dass für alle $n, m \geq N$ mit $n < m$ gilt $|\Sigma^{m}_{k = n+1} f_{k}| <  \epsilon$  
+ 
+\end{theorem}
+
+\section{Konvergenzkriterium von Leibniz}
+\begin{theorem}
+Es sei $a \in \mathbb{R}^{\mathbb{N}}$ eine monoton fallende Folge. Ferner sei
+$f \in \mathbb{R}^{\mathbb{N}}$ definiert durch $f_n = (-1)^n\cdot a_n$. Dann sind die folgenden beiden Aussagen äquivalent:
+\newline
+(a) Die zu f gehörende Reihe konvergiert.
+\newline
+(b) f ist eine Nullfolge
+\end{theorem}
+
+\section{Absolute Konvergenz bei Reihen}
+ \begin{theorem}[Majorantenkriterium]
+ 
+ Es seien $(a_n)_{n \in \mathbb{N}}$ und $(b_n)_{n \in \mathbb{N}}$ reel, oder -komplexwertige Folgen. Es gelte:
+\newline
+$\bullet |a_n| \leq |b_n|$ für jedes $n$;
+\newline
+$\bullet$ die zu $b$ gehörende Reihe ist konvergent
+ 
+\end{theorem}
+ 
+\begin{theorem}[Minorantenkriterium]
+ 
+Es seien $(a_n)_{n \in \mathbb{N}}$ und $(b_n)_{n \in \mathbb{N}}$ reel, oder -komplexwertige Folgen. Es gelte:
+\newline
+$\bullet |a_n| \geq |b_n|$ für jedes $n$;
+\newline
+$\bullet$ die zu $b$ gehörende Reihe ist divergent
+ 
+\end{theorem}
+\newpage
+\section{Wurzel- und Quotientenkriterium}
+\begin{theorem}[Quotientenkriterium]
+Es sei $(a_n)_{n \in \mathbb{N}}$ aus $\mathbb{R}^{\mathbb{N}}$ (oder aus $\mathbb{C}^{\mathbb{N}}$) mit $a_n \neq 0$ für fast alle $n$. Annahme, die Folge
+$(Q_n)_{n \in \mathbb{N}} := (\frac{|a_{n+1}|}{|a_n|})_{n \in \mathbb{N}}$
+der absoluten Quotienten konvergiert. Es gelte:
+
+$$
+\lim_{n \to \infty}\bigg(\frac{|a_{n+1}|}{|a_n|}\bigg)_{n \in \mathbb{N}} = q \in \mathbb{R}^{+}_{0} 
+$$
+Dann kann über die zu a gehörende Reihe $S^a$ Folgendes gesagt werden:
+\newline
+(1) Ist $q < 1$, so konvergiert $S^a$ absolut.
+\newline
+(2) Ist $q > 1$, so divergiert $S^a$ .
+\end{theorem}
+
+\begin{theorem}[Wurzelkriterium]
+
+Es sei $(a_n)_{n \in \mathbb{N}}$ eine beschränkte Folge aus $\mathbb{R}^{\mathbb{N}}$ (oder aus $\mathbb{C}^{\mathbb{N}}$).
+\\
+Weiterhin sei:
+$$
+L := \limsup (\sqrt[n]{|a_n|})
+$$
+der Limes superior der Wurzelfolge $(W_n)_{n \in \mathbb{N}^*}$. Dann kann über die zu $a$ gehörende Reihe $S^a$ Folgendes gesagt werden:
+\\
+(1) Ist $L < 1$, so konvergiert $S^a absolut$
+\\
+(2) Ist $L > 1$, so divergiert $S^a$.
+
+\end{theorem}
+
+\end{document}
